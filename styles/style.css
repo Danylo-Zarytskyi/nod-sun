@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+}
+.container .sunBox {
+  margin: auto;
+}
+.container .sunBox .sun {
+  width: 250px;
+  height: 250px;
+  background-image: url(../images/sunOn.png);
+  background-position: center;
+  background-size: 250px;
+}
+.container .sunBox .sunOff {
+  background-image: url(../images/sunOff.png);
+  background-position: center;
+  background-size: 250px;
+}
+.container .sunBox .sunRight {
+  margin-left: 400px;
+}
+.container .sunBox .sunLeft {
+  margin-left: -400px;
+}
+.container .horizontal {
+  position: absolute;
+  left: 100px;
+  top: 270px;
+  width: 70%;
+  border: 2px solid black;
+}
+.container .panel {
+  width: 400px;
+  height: 600px;
+  border: 3px solid black;
+  position: absolute;
+  right: 5px;
+  box-sizing: border-box;
+  padding: 105px;
+}
+.container .panel .On {
+  cursor: pointer;
+}
+.container .panel .Off {
+  cursor: pointer;
+}
+.container .panel .moveLeft {
+  cursor: pointer;
+}
+.container .panel .moveRight {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
