@@ -1,10 +1,5 @@
-.container {
-  display: flex;
-}
-.container .sunBox {
-  margin: auto;
-}
 .container .sunBox .sun {
+  margin: 0 auto;
   width: 250px;
   height: 250px;
   background-image: url(../images/sunOn.png);
@@ -17,26 +12,19 @@
   background-size: 250px;
 }
 .container .sunBox .sunRight {
-  margin-left: 400px;
+  margin-left: 200px;
 }
 .container .sunBox .sunLeft {
-  margin-left: -400px;
+  margin-right: 200px;
 }
-.container .horizontal {
-  position: absolute;
-  left: 100px;
-  top: 270px;
-  width: 70%;
-  border: 2px solid black;
+.container .sunBox .sunMid {
+  margin-left: 0;
 }
 .container .panel {
-  width: 400px;
-  height: 600px;
+  width: 100px;
+  height: 50px;
   border: 3px solid black;
-  position: absolute;
-  right: 5px;
-  box-sizing: border-box;
-  padding: 105px;
+  padding: 20px;
 }
 .container .panel .On {
   cursor: pointer;
@@ -49,4 +37,33 @@
 }
 .container .panel .moveRight {
   cursor: pointer;
+}
+
+.cubeG {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  margin-left: 320px;
+  margin-top: 200px;
+}
+.cubeG .cubeL {
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+}
+.cubeG .cubeM {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+}
+.cubeG .cubeR {
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+}
+.cubeG .cubeSelected {
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+  background-color: green;
 }/*# sourceMappingURL=style.css.map */

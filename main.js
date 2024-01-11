@@ -3,8 +3,11 @@ let butOff = document.querySelector('.Off');
 let sun = document.querySelector('.sun');
 let moveRight = document.querySelector('.moveRight');
 let moveLeft = document.querySelector('.moveLeft');
+let cubeL = document.querySelector('.cubeL');
+let cubeS = document.querySelector('.cubeSelected');
+let cubeR = document.querySelector('.cubeR');
 
-let clickCount = 0;
+
 
 butOff.addEventListener('click', () => {
     sun.classList.add('sunOff')
@@ -12,20 +15,26 @@ butOff.addEventListener('click', () => {
 butOn.addEventListener('click', () => {
     sun.classList.remove('sunOff')
 });
-moveRight.addEventListener('click', () => {
-    clickCount++;
-    sun.classList.remove('sunLeft');
-    sun.classList.toggle('sunRight'); 
-    sun.classList.add('sunMid');
-  
-    
 
-})
-moveLeft.addEventListener('click', () => {
-    clickCount++;
+moveRight.addEventListener('click', () => {
+    
+    
     sun.classList.remove('sunRight');
     sun.classList.toggle('sunLeft');
-    sun.classList.add('sunMid');
+    cubeR.classList.toggle('cubeSelected');
+    cubeS.classList.toggle('cubeM');
+    cubeS.classList.toggle('cubeSelected');
     
     
 })
+moveLeft.addEventListener('click', () => {
+    
+    
+    sun.classList.remove('sunLeft');
+    sun.classList.toggle('sunRight'); 
+    cubeL.classList.toggle('cubeSelected');
+    cubeS.classList.toggle('cubeM');
+    cubeS.classList.toggle('cubeSelected');
+
+})
+
